@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón púrpura */
+.button.purple {
+    background-color: #800080;
+}
+
+.button.purple:hover {
+    background-color: #660066; /* Un tono más oscuro para el hover */
+}
+
+/* Botón verde */
+.button.green {
+    background-color: #008000;
+}
+
+.button.green:hover {
+    background-color: #006600; /* Un tono más oscuro para el hover */
+}
